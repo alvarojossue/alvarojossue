@@ -1,0 +1,5 @@
+== PORTFOLIO WEBSITE
+
+Personal portfolio website as a developer, photographer and content producer.
+
+Technologies: HTML, CSS & jQuery. 
