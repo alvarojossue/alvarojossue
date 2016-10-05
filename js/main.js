@@ -15,7 +15,7 @@ $(document).on("ready", function(){
 	});
 
 
-	var num = $(window).height() * 0.90 //number of pixels before modifying styles
+	var num = $(window).height() * 0.92 //number of pixels before modifying styles
 
 	$(window).bind('scroll', function () {
 	    if ($(window).scrollTop() > num) {
