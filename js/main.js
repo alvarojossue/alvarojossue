@@ -19,9 +19,9 @@ $(document).on("ready", function(){
 
 	$(window).bind('scroll', function () {
 	    if ($(window).scrollTop() > num) {
-	        $('#nav').addClass('fixed');
+	        $('nav').addClass('fixed');
 	    } else {
-	        $('#nav').removeClass('fixed');
+	        $('nav').removeClass('fixed');
 	    }
 	});
 

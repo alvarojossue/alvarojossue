@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-family: 'Neutra', sans-serif;
-    font-size: 3.15em;
+    font-size: 3em;
     letter-spacing: 1px;
     line-height: 0.8em;
 }
@@ -52,13 +52,16 @@ header {
 }
 
 #services {
-    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: lighter;
     color: #fff;
     text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 
-#nav {
+nav {
     display: flex;
     width: 100%;
     background: #000;
@@ -67,20 +70,54 @@ header {
     text-align: center;
 }
 
-#nav li {
+nav li {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-#nav li a {
+nav li a {
     color: #fff;
-    font-size: 1.8em;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 15px 0;
+}
+
+nav li a:hover {
+    color: #d3d3d3;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background-color: #d3d3d3;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .fixed { 
     position: fixed;
     top: 0;
 }
+
+
+
 
