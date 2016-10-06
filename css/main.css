@@ -19,6 +19,7 @@ h1 {
 header {
     height: 92vh;
     background-image: url("../images/background-4.jpg");
+    background-color: #656660;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
