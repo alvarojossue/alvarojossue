@@ -16,6 +16,13 @@ h1 {
     line-height: 0.8em;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 header {
     height: 92vh;
     background-image: url("../images/background-4.jpg");
@@ -119,6 +126,14 @@ nav li a:hover:before {
     top: 0;
 }
 
+.headline-2 {
+    text-align: center;
+    margin-top: 9vh;
+}
+
+.headline-2-after {
+    margin-top: 17vh;
+}
 
 
 

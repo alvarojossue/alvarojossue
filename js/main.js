@@ -20,8 +20,10 @@ $(document).on("ready", function(){
 	$(window).bind('scroll', function () {
 	    if ($(window).scrollTop() > num) {
 	        $('nav').addClass('fixed');
+	        $('#about').addClass('headline-2-after');
 	    } else {
 	        $('nav').removeClass('fixed');
+	        $('#about').removeClass('headline-2-after');
 	    }
 	});
 
