@@ -25,10 +25,11 @@ h2 {
 
 header {
     height: 92vh;
-    background-image: url("../images/background-4.jpg");
+    background-image: url("../images/background-4b.jpg");
     background-color: #656660;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
 }
 
