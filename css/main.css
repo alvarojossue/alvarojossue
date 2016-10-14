@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+    height: 10000px;
 }
 
 p {
@@ -23,7 +24,7 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -133,6 +134,10 @@ nav li a:hover:before {
     top: 0;
 }
 
+/**********************************
+SECTION: ABOUT ME
+***********************************/
+
 .headline-2 {
     text-align: center;
     margin-top: 9vh;
@@ -153,21 +158,21 @@ img {
 
 .profile-image {
     border-radius: 50%;
-    margin: 45px 0;
+    margin: 60px 0;
 }
 
 .stack-icon {
     height: 110px;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .stack-container {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
-.stack-name, .project-name {
+.stack-name, .project-name, .contact p {
     font-family: 'Montserrat', sans-serif;    
     text-transform: uppercase;
     font-weight: bold;
@@ -180,8 +185,14 @@ img {
 SECTION: WORK
 ***********************************/
 
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #projects {
-  margin: 45px 0;
+  margin: 60px 0;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -190,7 +201,7 @@ SECTION: WORK
 #projects li {
   float: left;
   width: 100%;
-  margin: 2.5% 0;
+  margin: 5% 0;
   background-color: #fff;
   border: 1px solid #efefef;
   color: #bdc3c7;
@@ -201,3 +212,33 @@ SECTION: WORK
   padding: 5%;
 }
 
+
+/**********************************
+SECTION: CONTACT
+***********************************/
+
+.contact {
+    background-color: #939c9e;
+    background: url("../images/building.jpg") no-repeat center;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 14px;
+    padding: 70px 0;
+}
+
+.btn {
+    background: rgba(61, 201, 179, 0.5);
+    border: solid 1px rgba(61, 201, 179, 0.5);
+    padding: 20px 80px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
