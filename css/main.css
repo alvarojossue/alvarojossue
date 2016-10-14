@@ -11,6 +11,7 @@ body {
 p {
     font-size: 14px;
     line-height: 25px;
+    color: #888;
 }
 
 h1 {
@@ -166,10 +167,37 @@ img {
     margin-bottom: 30px;
 }
 
-.stack-name {
+.stack-name, .project-name {
     font-family: 'Montserrat', sans-serif;    
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 5px;
+    color: #000;
 }
+
+/**********************************
+SECTION: WORK
+***********************************/
+
+#projects {
+  margin: 45px 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#projects li {
+  float: left;
+  width: 100%;
+  margin: 2.5% 0;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  color: #bdc3c7;
+}
+
+#projects li a p {
+  margin: 0;
+  padding: 5%;
+}
+

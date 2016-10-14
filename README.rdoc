@@ -3,6 +3,7 @@
 Personal portfolio website as a web developer, tech blogger and coding teacher assistant.
 
 Technologies: HTML, CSS & jQuery.
-Design pattern: Mobile-first Responsive.
+
+Design pattern: Mobile-First Responsive.
 
 Follow me on Twitter and Instagram: @alvarojossue. 
