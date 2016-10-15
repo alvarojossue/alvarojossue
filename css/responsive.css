@@ -26,8 +26,25 @@
 
 @media screen and (min-width: 660px) {
 
+	h1 {
+		font-size: 5.5em;
+	}
+
+	#services {
+		font-size: 24px;
+	}
+
+	nav li {
+		margin-left: 10px;
+    	margin-right: 10px;
+	}
+
+	nav li a {
+		font-size: 18px;
+	}
+
 	.container {
-		width: 75%;
+		width: 80%;
 	}
 	.info {
 		float: left;
@@ -41,4 +58,31 @@
 	.logo-contact img {
 		width: 150px;
 	}
+
+	.stack-container {
+		float: left;
+		width: 50%;
+	}
+
+
+	#projects li:first-child {
+		float: left;
+		width: 47%;
+		margin: 0% 1.5% 1.5% 0;
+	}
+
+	#projects li:nth-child(2) {
+		float: right;
+		width: 47%;
+		margin: 0% 0 1.5% 1.5%;
+	}
+
+	#projects li:last-child {
+		width: 100%;
+	}
+
+	#projects li:last-child a p {
+  margin: 0;
+  padding: 3%;
+}
 }
