@@ -249,6 +249,12 @@ SECTION: CONTACT (EMAIL BANNER)
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn:hover {
+    background: #2a8c7d;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 /**********************************
@@ -289,6 +295,17 @@ SECTION: CONTACT INFO (GENERAL)
     width: 150px;
     margin: 50px auto;
 }
+
+.info-social a:link, .info-social a:visited, .info-social a:active {
+    color: #000;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.info-social a:hover {
+    color: #888;
+    transition: all 0.3s ease-in-out 0s;
+}
+
 
 /**********************************
 SECTION: FOOTER
