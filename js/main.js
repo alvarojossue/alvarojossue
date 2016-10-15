@@ -1,6 +1,8 @@
 $(document).on("ready", function(){
 	
 	console.log('wired');
+
+	// -------- Main name effect ---------- //
 	
 	$("#js-rotating").Morphext({
     // The [in] animation type. Refer to Animate.css for a list of available animations.
@@ -14,6 +16,7 @@ $(document).on("ready", function(){
     	}
 	});
 
+	// --------- Nav bar fixed after scrolling down --------- //
 
 	var num = $(window).height() * 0.92 //number of pixels before modifying styles
 
@@ -26,5 +29,19 @@ $(document).on("ready", function(){
 	        $('#about').removeClass('headline-2-after');
 	    }
 	});
+
+
+	// ---- Smooth scroll down/up after click from nav bar ----- //
+
+	var $root = $('html, body');
+	var adjustment = $(window).height() * 0.16
+	$('a').click(function() {
+	    $root.animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top - adjustment 
+	    }, 1450);
+	    return false;
+	});
+
+
 
 })
