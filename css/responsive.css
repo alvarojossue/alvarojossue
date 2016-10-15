@@ -11,7 +11,11 @@
 		font-size: 20px;
 	}
 
-	.contact p {
+	.contact h3 {
+		font-size: 16px;
+	}
+
+	.next h3 {
 		font-size: 16px;
 	}
 }

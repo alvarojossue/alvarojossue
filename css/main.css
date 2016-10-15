@@ -168,11 +168,11 @@ img {
 
 .stack-container {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.stack-name, .project-name, .contact p {
+.stack-name, .project-name, .contact h3, .next h3 {
     font-family: 'Montserrat', sans-serif;    
     text-transform: uppercase;
     font-weight: bold;
@@ -212,6 +212,30 @@ SECTION: WORK
   padding: 5%;
 }
 
+/**********************************
+SECTION: WHAT'S NEXT
+***********************************/
+.next {
+    background-color: #939c9e;
+    background: url("../images/building-2.jpg") no-repeat center;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.next h3 {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 0 30px 0;
+}
+
+.next p {
+    color: #fff;
+}
 
 /**********************************
 SECTION: CONTACT
@@ -225,12 +249,19 @@ SECTION: CONTACT
     background-size: cover;
     height: 300px;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.contact h3 {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 0 30px 0;
 }
 
 .contact p {
     color: #fff;
-    font-size: 14px;
-    padding: 70px 0;
+    margin-bottom: 50px;
 }
 
 .btn {
