@@ -35,7 +35,7 @@ $(document).on("ready", function(){
 
 	var $root = $('html, body');
 	var adjustment = $(window).height() * 0.16
-	$('a').click(function() {
+	$('a[href*="#"]').click(function() {
 	    $root.animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - adjustment 
 	    }, 1450);
