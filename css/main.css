@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-    height: 10000px;
 }
 
 p {
@@ -273,3 +272,23 @@ SECTION: CONTACT
     letter-spacing: 1px;
     font-weight: 600;
 }
+
+/**********************************
+SECTION: FOOTER
+***********************************/
+ footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+ }
+
+ footer p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 30px;
+ }
+
