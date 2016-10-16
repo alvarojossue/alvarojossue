@@ -75,6 +75,10 @@ header {
     line-height: 30px;
 }
 
+.slideRight-element, .fadeIn-element {
+    visibility: hidden;
+}
+
 /**********************************
 SECTION: NAV BAR
 ***********************************/
@@ -275,6 +279,10 @@ SECTION: CONTACT INFO (GENERAL)
 .info i {
     margin: 5px 0;
     font-size: 15px;
+}
+
+.info a span:hover {
+    color: black;
 }
 
 .info-social {
