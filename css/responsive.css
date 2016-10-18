@@ -113,8 +113,8 @@ SECTION: NAV BAR
 	}
 
 	#projects li:last-child a p {
-  margin: 0;
-  padding: 3%;
+  	margin: 0;
+  	padding: 3%;
 	}
 }
 
@@ -124,11 +124,36 @@ SECTION: NAV BAR
 	.container {
 		max-width: 1200px;
 	}
+	
+	
+	.next {
+		height: 350px;
+	}
 
 	.stack-container {
 		float: left;
 		width: 20%;
 		margin-right: 2.5%;
 		margin-left: 2.5%;
+	}
+
+	#projects li:first-child, #projects li:nth-child(2), #projects li:last-child {
+		width: 29%;
+		margin: 0 2%;
+		float: left;
+	}
+
+
+	#projects li:last-child a p {
+  	margin: 0;
+  	padding: 5%;
+	}
+
+	.contact {
+		height: 350px;
+	}
+
+	.container-info-wide {
+		max-width: 1000px;
 	}
 }
