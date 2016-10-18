@@ -44,27 +44,28 @@ $(document).on("ready", function(){
 
 	// ---- Activate slideRight effect when user scroll down ----- //
 
-	$(window).scroll(function() {
-		$('.slideRight-element').each(function(){
-		var imagePos = $(this).offset().top;
+	// $(window).scroll(function() {
+	// 	$('.slideRight-element').each(function(){
+	// 	var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
-				$(this).addClass("slideRight");
-			}
-		});
-	});
+	// 	var topOfWindow = $(window).scrollTop();
+	// 		if (imagePos < topOfWindow+500) {
+	// 			$(this).addClass("slideRight");
+	// 		}
+	// 	});
+	// });
 
 	// ---- Activate slideRight effect when user scroll down ----- //
 
-		$(window).scroll(function() {
-		$('.fadeIn-element').each(function(){
-		var imagePos = $(this).offset().top;
+	// 	var adjustment = $(window).height() * 0.80
+	// 	$(window).scroll(function() {
+	// 	$('.fadeIn-element').each(function(){
+	// 	var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+900) {
-				$(this).addClass("fadeIn");
-			}
-		});
-	});
+	// 	var topOfWindow = $(window).scrollTop();
+	// 		if (imagePos < topOfWindow+adjustment) {
+	// 			$(this).addClass("fadeIn");
+	// 		}
+	// 	});
+	// });
 })

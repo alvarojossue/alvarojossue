@@ -75,7 +75,7 @@ header {
     line-height: 30px;
 }
 
-.slideRight-element, .fadeIn-element {
+/*.slideRight-element *//*.fadeIn-element */{
     visibility: hidden;
 }
 
