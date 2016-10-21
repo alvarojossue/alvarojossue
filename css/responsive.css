@@ -119,13 +119,13 @@ SECTION: NAV BAR
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
 
 	.container {
 		max-width: 1200px;
 	}
 	
-	
+
 	.next {
 		height: 350px;
 	}
