@@ -147,6 +147,11 @@ SECTION: NAV BAR
 		margin-left: 2.5%;
 	}
 
+	.stack-container:hover {
+    top: -30px;
+    transition: all 0.3s ease-in-out 0s;
+	}
+
 	#projects li:first-child, #projects li:nth-child(2), #projects li:last-child {
 		width: 29%;
 		margin: 0 2%;

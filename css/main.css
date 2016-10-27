@@ -157,6 +157,9 @@ img {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .stack-name, .project-name, .contact h3, .next h3 {
