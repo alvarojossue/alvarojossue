@@ -107,22 +107,6 @@ $(document).on("ready", function(){
 
 	// ---- Activate slideRight effect for footer when user scroll down ----- //
 	if ($(window).width() > 1000) {
-		$('.slideRight-footer').css('visibility', 'hidden')
-		$(window).scroll(function() {
-			$('.slideRight-footer').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+1200) {
-					$(this).css('visibility', 'visible')
-					$(this).addClass("animated slideRight");
-				}
-			});
-		});
-	}
-
-	// ---- Activate slideRight effect for footer when user scroll down ----- //
-	if ($(window).width() > 1000) {
 		$('.slideLeft-footer').css('visibility', 'hidden')
 		$(window).scroll(function() {
 			$('.slideLeft-footer').each(function(){
