@@ -42,7 +42,7 @@ $(document).on("ready", function(){
 	    return false;
 	});
 
-	// ---- Activate slideLeft effect when user scroll down ----- //
+	// ---- Activate flipInY effect when user scroll down ----- //
 	if ($(window).width() > 1000) {
 			$('.profile-image').css('visibility', 'hidden')
 			$(window).scroll(function() {
@@ -73,4 +73,67 @@ $(document).on("ready", function(){
 		});
 	}
 
+	// ---- Activate zoomIn effect when user scroll down ----- //
+	if ($(window).width() > 1000) {
+			$('.js-zoomIn-element').css('visibility', 'hidden')
+			$(window).scroll(function() {
+				$('.js-zoomIn-element').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+800) {
+						$(this).css('visibility', 'visible')
+						$(this).addClass("animated zoomIn")
+					}
+				});
+			});
+	}
+
+	// ---- Activate fadeInUp effect when user scroll down ----- //
+	if ($(window).width() > 1000) {
+			$('.js-fadeInUp-element').css('visibility', 'hidden')
+			$(window).scroll(function() {
+				$('.js-fadeInUp-element').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+800) {
+						$(this).css('visibility', 'visible')
+						$(this).addClass("animated fadeInUp")
+					}
+				});
+			});
+	}
+
+	// ---- Activate slideRight effect for footer when user scroll down ----- //
+	if ($(window).width() > 1000) {
+		$('.slideRight-footer').css('visibility', 'hidden')
+		$(window).scroll(function() {
+			$('.slideRight-footer').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+1200) {
+					$(this).css('visibility', 'visible')
+					$(this).addClass("animated slideRight");
+				}
+			});
+		});
+	}
+
+	// ---- Activate slideRight effect for footer when user scroll down ----- //
+	if ($(window).width() > 1000) {
+		$('.slideLeft-footer').css('visibility', 'hidden')
+		$(window).scroll(function() {
+			$('.slideLeft-footer').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+900) {
+					$(this).css('visibility', 'visible')
+					$(this).addClass("animated slideInRight");
+				}
+			});
+		});
+	}
 })
