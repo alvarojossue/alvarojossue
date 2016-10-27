@@ -1,6 +1,7 @@
 $(document).on("ready", function(){
-	
+
 	console.log('wired');
+	new WOW().init();
 
 	// -------- Main name effect ---------- //
 	
@@ -73,21 +74,6 @@ $(document).on("ready", function(){
 		});
 	}
 
-	// ---- Activate zoomIn effect when user scroll down ----- //
-	if ($(window).width() > 1000) {
-			$('.js-zoomIn-element').css('visibility', 'hidden')
-			$(window).scroll(function() {
-				$('.js-zoomIn-element').each(function(){
-				var imagePos = $(this).offset().top;
-
-				var topOfWindow = $(window).scrollTop();
-					if (imagePos < topOfWindow+800) {
-						$(this).css('visibility', 'visible')
-						$(this).addClass("animated zoomIn")
-					}
-				});
-			});
-	}
 
 	// ---- Activate fadeInUp effect when user scroll down ----- //
 	if ($(window).width() > 1000) {
@@ -119,5 +105,10 @@ $(document).on("ready", function(){
 				}
 			});
 		});
+	}
+
+	// ---- Deactivate zoomIn effect for smaller screens ----- //
+	if ($(window).width() < 1000) {
+			$('.js-zoomIn-element').removeClass("zoomIn");
 	}
 })
