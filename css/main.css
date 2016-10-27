@@ -14,6 +14,10 @@ p {
     color: #888;
 }
 
+b {
+    font-weight: 700;
+}
+
 h1 {
     font-family: 'Neutra', sans-serif;
     font-size: 3em;
@@ -75,7 +79,7 @@ header {
     line-height: 30px;
 }
 
-/*.slideRight-element *//*.fadeIn-element */{
+.slideRight-element, .slideLeft-element {
     visibility: hidden;
 }
 
@@ -91,6 +95,7 @@ nav {
     align-items: center;
     text-align: center;
     border-bottom: 1px solid #333;
+    z-index: 100;
 }
 
 nav li {

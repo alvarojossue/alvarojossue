@@ -120,11 +120,21 @@ SECTION: NAV BAR
 
 
 @media screen and (min-width: 1000px) {
+	
+	h1 {
+		font-size: 6.5em;
+	}
 
+	h2 {
+		font-size: 38px;
+	}
 	.container {
 		max-width: 1200px;
 	}
-	
+
+	#services {
+		line-height: 45px;
+	}	
 
 	.next {
 		height: 350px;
