@@ -182,19 +182,22 @@ SECTION: WORK
 }
 
 #projects {
-  margin: 60px 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
+    margin: 60px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 #projects li {
-  float: left;
-  width: 100%;
-  margin: 5% 0;
-  background-color: #fff;
-  border: 1px solid #efefef;
-  color: #bdc3c7;
+    float: left;
+    width: 100%;
+    margin: 5% 0;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    color: #bdc3c7;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 #projects li a p {
