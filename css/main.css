@@ -79,8 +79,8 @@ header {
     line-height: 30px;
 }
 
-.slideRight-element, .slideLeft-element {
-    visibility: hidden;
+.visible {
+    visibility: visible;
 }
 
 /**********************************

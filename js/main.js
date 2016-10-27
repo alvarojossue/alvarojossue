@@ -42,29 +42,35 @@ $(document).on("ready", function(){
 	    return false;
 	});
 
-	// ---- Activate slideRight effect when user scroll down ----- //
-
-	$(window).scroll(function() {
-		$('.slideRight-element').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+800) {
-				$(this).addClass("slideRight");
-			}
-		});
-	});
-
 	// ---- Activate slideLeft effect when user scroll down ----- //
+	if ($(window).width() > 1000) {
+			$('.profile-image').css('visibility', 'hidden')
+			$(window).scroll(function() {
+				$('.profile-image').each(function(){
+				var imagePos = $(this).offset().top;
 
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+700) {
+						$(this).css('visibility', 'visible')
+						$(this).addClass("animated flipInY");
+					}
+				});
+			});
+	}
+
+	// ---- Activate slideRight effect when user scroll down ----- //
+	if ($(window).width() > 1000) {
+		$('.slideRight-element').css('visibility', 'hidden')
 		$(window).scroll(function() {
-		$('.slideLeft-element').each(function(){
-		var imagePos = $(this).offset().top;
+			$('.slideRight-element').each(function(){
+			var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+800) {
-				$(this).addClass("slideLeft");
-			}
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+800) {
+					$(this).addClass("slideRight");
+				}
+			});
 		});
-	});
+	}
+
 })
