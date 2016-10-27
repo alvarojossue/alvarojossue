@@ -132,12 +132,17 @@ SECTION: NAV BAR
 		max-width: 1200px;
 	}
 
+	.header {
+		background-attachment: fixed;
+	}
+
 	#services {
 		line-height: 45px;
 	}	
 
 	.next {
 		height: 350px;
+		background-attachment: fixed;
 	}
 
 	.stack-container {
@@ -166,6 +171,7 @@ SECTION: NAV BAR
 
 	.contact {
 		height: 350px;
+		background-attachment: fixed;
 	}
 
 	.container-info-wide {

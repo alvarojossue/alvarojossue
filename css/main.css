@@ -38,7 +38,6 @@ header {
     background-color: #656660;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .container {
@@ -210,7 +209,6 @@ SECTION: WHAT'S NEXT
 .next {
     background-color: #939c9e;
     background: url("../images/building-2.jpg") no-repeat center;
-    background-attachment: fixed;
     width: 100%;
     background-size: cover;
     height: 300px;
@@ -236,7 +234,6 @@ SECTION: CONTACT (EMAIL BANNER)
 .contact {
     background-color: #939c9e;
     background: url("../images/building.jpg") no-repeat center;
-    background-attachment: fixed;
     width: 100%;
     background-size: cover;
     height: 300px;
