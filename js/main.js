@@ -99,7 +99,7 @@ $(document).on("ready", function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+900) {
+				if (imagePos < topOfWindow+1000) {
 					$(this).css('visibility', 'visible')
 					$(this).addClass("animated slideInRight");
 				}
